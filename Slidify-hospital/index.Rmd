@@ -1,0 +1,42 @@
+---
+title       : Shiny application for hospital data
+subtitle    : 
+author      : Vincent Bolwerk
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Why Shiny?
+
+Shiny is an R package that makes it easy to build interactive web apps straight from R. You can host standalone apps on a webpage or embed them in R Markdown documents or build dashboards.
+
+Shiny combines the computational power of R with the interactivity of the modern web.
+
+--- .class #id 
+
+## Why hospital data?
+
+This shiny app can make it easier to find hospitals in your own state, or search hospitals by other attributes!
+
+--- .class #id 
+
+## A preview of the solution
+The solution simply filters on search terms, like demonstrated below:
+```{r}
+setwd("C:/Users/VBolwerk/Documents/Personal development/R course/part_9/shiny_app/shiny_app")
+data <-read.csv("hospital-data.csv")
+head(data[data$State=="AK",])
+```
+
+--- .class #id 
+
+## Thank you!
+
+
+
+

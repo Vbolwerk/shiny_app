@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shiny application for hospital data</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Shiny application for hospital data">
+  <meta name="author" content="Vincent Bolwerk">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Shiny application for hospital data</h1>
+    <h2></h2>
+    <p>Vincent Bolwerk<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Why Shiny?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Shiny is an R package that makes it easy to build interactive web apps straight from R. You can host standalone apps on a webpage or embed them in R Markdown documents or build dashboards.</p>
+
+<p>Shiny combines the computational power of R with the interactivity of the modern web.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Why hospital data?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This shiny app can make it easier to find hospitals in your own state, or search hospitals by other attributes!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>A preview of the solution</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The solution simply filters on search terms, like demonstrated below:</p>
+
+<pre><code class="r">setwd(&quot;C:/Users/VBolwerk/Documents/Personal development/R course/part_9/shiny_app/shiny_app&quot;)
+data &lt;-read.csv(&quot;hospital-data.csv&quot;)
+head(data[data$State==&quot;AK&quot;,])
+</code></pre>
+
+<pre><code>##     Provider.Number                      Hospital.Name
+## 103          020001   PROVIDENCE ALASKA MEDICAL CENTER
+## 104          020006     MAT-SU REGIONAL MEDICAL CENTER
+## 105          020008         BARTLETT REGIONAL HOSPITAL
+## 106          020012        FAIRBANKS MEMORIAL HOSPITAL
+## 107          020017           ALASKA REGIONAL HOSPITAL
+## 108          020018 YUKON KUSKOKWIM DELTA REG HOSPITAL
+##                     Address.1 Address.2 Address.3      City State ZIP.Code
+## 103                BOX 196604        NA        NA ANCHORAGE    AK    99519
+## 104 2500 SOUTH WOODWORTH LOOP        NA        NA    PALMER    AK    99645
+## 105          3260 HOSPITAL DR        NA        NA    JUNEAU    AK    99801
+## 106        1650 COWLES STREET        NA        NA FAIRBANKS    AK    99701
+## 107          2801 DEBARR ROAD        NA        NA ANCHORAGE    AK    99508
+## 108                PO BOX 287        NA        NA    BETHEL    AK    99559
+##                   County Phone.Number        Hospital.Type
+## 103            ANCHORAGE   9072613675 Acute Care Hospitals
+## 104    MATANUSKA SUSITNA   9077468600 Acute Care Hospitals
+## 105               JUNEAU   9077968900 Acute Care Hospitals
+## 106 FAIRBANKS NORTH STAR   9074528181 Acute Care Hospitals
+## 107            ANCHORAGE   9072761131 Acute Care Hospitals
+## 108               BETHEL   9075436300 Acute Care Hospitals
+##                 Hospital.Ownership Emergency.Services
+## 103 Voluntary non-profit - Private                Yes
+## 104 Voluntary non-profit - Private                Yes
+## 105                    Proprietary                Yes
+## 106   Voluntary non-profit - Other                Yes
+## 107                    Proprietary                Yes
+## 108           Government - Federal                Yes
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Thank you!</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Why Shiny?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Why hospital data?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='A preview of the solution'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Thank you!'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

@@ -1,0 +1,13 @@
+name: shiny_app
+title: shiny_app
+username:
+account: vbolwerk
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 974492
+bundleId: 2143050
+url: https://vbolwerk.shinyapps.io/shiny_app/
+when: 1560185127.95844
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: README.md|Slidify-hospital
